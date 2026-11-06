@@ -1,0 +1,25 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Archivos del sistema y temporales
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Dependencias y cachés
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Salidas generadas
+dist/
+build/
+coverage/
+*.log
