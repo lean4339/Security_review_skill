@@ -1,5 +1,7 @@
 # Security_review_skill
 
+[🌐 Documentación en 32 idiomas](docs/i18n/README.md) · [Evaluación y casos testigo](evals/README.md)
+
 Skill reutilizable para estudiar OWASP, escribir código seguro y revisar commits de cualquier proyecto con las técnicas vigentes del Top 10. Este repositorio distribuye la skill; el trabajo se realiza sobre el proyecto desde el que se la invoca. También permite estudiar sin repositorio.
 
 ## Uso

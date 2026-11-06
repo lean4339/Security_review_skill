@@ -1,0 +1,20 @@
+{
+  "date_local": "2026-11-05",
+  "python": "3.14.4",
+  "git": "git version 2.53.0",
+  "source_commit": "996bf760d6fa3e331521d50faf0d7dde863bf8bb",
+  "invocation": "Three collaboration agents with fork_turns=none; explicit skill path; no codex exec",
+  "evaluators": [
+    "eval_review",
+    "eval_development",
+    "eval_quiz"
+  ],
+  "grading": "Main agent manually compared raw responses with cases.json; deterministic fixture replay in run_witnesses.py",
+  "model_identifier": "Not independently recorded by the evaluation harness",
+  "languages_behaviorally_tested": [
+    "es",
+    "en"
+  ],
+  "translation_count": 32,
+  "native_speaker_review": false
+}

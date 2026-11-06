@@ -1,0 +1,11 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "security-review/SKILL.md": "52caf6c684d7a6dc22bb9c98ea18d1ea67ee11d84562fc1f8f8bc1b4d28bd6a9",
+    "security-review/agents/openai.yaml": "837ade0103fdfb2fc5e7a4458d3aec1c5208ea88e1feadf6f64756fc9030b751",
+    "security-review/references/ai-security.md": "6f4903133f5e485c63b483c61e5b0658b9503739ebe75a4bd144a93903b2d401",
+    "security-review/references/learning.md": "9b996c1bf7e6f4be1da6a60ba006f85a4edd8da2979391cd5ff26f725d2dcd31",
+    "security-review/references/owasp.md": "f83cbf944e6ea260c95175f921d8ebbd779356a96971b8904f54b5c2a3a70281",
+    "security-review/references/security-tests.md": "e13d81ab0392e786d22a5b2a6e0c1e04631f0bc2021663f542b8008235ab515f"
+  }
+}

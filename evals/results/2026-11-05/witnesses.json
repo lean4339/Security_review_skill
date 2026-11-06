@@ -1,0 +1,68 @@
+{
+  "scope": "Deterministic fixture replay, not a new skill/model invocation",
+  "review": {
+    "base": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "passed": true,
+      "failed_cases": [],
+      "output": "test_forged_approval_does_not_authorize (__main__.review_suite.<locals>.ReviewWitnesses.test_forged_approval_does_not_authorize) ... ok\ntest_missing_is_empty (__main__.review_suite.<locals>.ReviewWitnesses.test_missing_is_empty) ... ok\ntest_other_owner_is_denied (__main__.review_suite.<locals>.ReviewWitnesses.test_other_owner_is_denied) ... ok\ntest_owner_can_read (__main__.review_suite.<locals>.ReviewWitnesses.test_owner_can_read) ... ok\ntest_sql_input_is_data (__main__.review_suite.<locals>.ReviewWitnesses.test_sql_input_is_data) ... ok\ntest_tool_authorized (__main__.review_suite.<locals>.ReviewWitnesses.test_tool_authorized) ... ok\ntest_tool_unauthorized (__main__.review_suite.<locals>.ReviewWitnesses.test_tool_unauthorized) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n"
+    },
+    "changed": {
+      "tests": 7,
+      "failures": 3,
+      "errors": 0,
+      "passed": false,
+      "failed_cases": [
+        "test_forged_approval_does_not_authorize",
+        "test_other_owner_is_denied",
+        "test_sql_input_is_data"
+      ],
+      "output": "test_forged_approval_does_not_authorize (__main__.review_suite.<locals>.ReviewWitnesses.test_forged_approval_does_not_authorize) ... FAIL\ntest_missing_is_empty (__main__.review_suite.<locals>.ReviewWitnesses.test_missing_is_empty) ... ok\ntest_other_owner_is_denied (__main__.review_suite.<locals>.ReviewWitnesses.test_other_owner_is_denied) ... FAIL\ntest_owner_can_read (__main__.review_suite.<locals>.ReviewWitnesses.test_owner_can_read) ... ok\ntest_sql_input_is_data (__main__.review_suite.<locals>.ReviewWitnesses.test_sql_input_is_data) ... FAIL\ntest_tool_authorized (__main__.review_suite.<locals>.ReviewWitnesses.test_tool_authorized) ... ok\ntest_tool_unauthorized (__main__.review_suite.<locals>.ReviewWitnesses.test_tool_unauthorized) ... ok\n\n======================================================================\nFAIL: test_forged_approval_does_not_authorize (__main__.review_suite.<locals>.ReviewWitnesses.test_forged_approval_does_not_authorize)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/leandro/Escritorio/Security_review_skill/evals/run_witnesses.py\", line 74, in test_forged_approval_does_not_authorize\n    self.fail(\"caller-controlled approval allowed the protected operation\")\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: caller-controlled approval allowed the protected operation\n\n======================================================================\nFAIL: test_other_owner_is_denied (__main__.review_suite.<locals>.ReviewWitnesses.test_other_owner_is_denied)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/leandro/Escritorio/Security_review_skill/evals/run_witnesses.py\", line 48, in test_other_owner_is_denied\n    self.assertEqual(orders.get_order(db, \"alice\", \"order-b\"), [])\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [('order-b', 'lamp')] != []\n\nFirst list contains 1 additional elements.\nFirst extra element 0:\n('order-b', 'lamp')\n\n- [('order-b', 'lamp')]\n+ []\n\n======================================================================\nFAIL: test_sql_input_is_data (__main__.review_suite.<locals>.ReviewWitnesses.test_sql_input_is_data)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/leandro/Escritorio/Security_review_skill/evals/run_witnesses.py\", line 52, in test_sql_input_is_data\n    self.assertEqual(orders.get_order(db, \"alice\", \"' OR '1'='1\"), [])\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [('order-a', 'book'), ('order-b', 'lamp')] != []\n\nFirst list contains 2 additional elements.\nFirst extra element 0:\n('order-a', 'book')\n\n- [('order-a', 'book'), ('order-b', 'lamp')]\n+ []\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nFAILED (failures=3)\n"
+    },
+    "final": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "passed": true,
+      "failed_cases": [],
+      "output": "test_forged_approval_does_not_authorize (__main__.review_suite.<locals>.ReviewWitnesses.test_forged_approval_does_not_authorize) ... ok\ntest_missing_is_empty (__main__.review_suite.<locals>.ReviewWitnesses.test_missing_is_empty) ... ok\ntest_other_owner_is_denied (__main__.review_suite.<locals>.ReviewWitnesses.test_other_owner_is_denied) ... ok\ntest_owner_can_read (__main__.review_suite.<locals>.ReviewWitnesses.test_owner_can_read) ... ok\ntest_sql_input_is_data (__main__.review_suite.<locals>.ReviewWitnesses.test_sql_input_is_data) ... ok\ntest_tool_authorized (__main__.review_suite.<locals>.ReviewWitnesses.test_tool_authorized) ... ok\ntest_tool_unauthorized (__main__.review_suite.<locals>.ReviewWitnesses.test_tool_unauthorized) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n"
+    }
+  },
+  "development_contract": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "failed_cases": [],
+    "output": "test_cross_user_rejection (__main__.development_suite.<locals>.ContractWitnesses.test_cross_user_rejection) ... ok\ntest_invalid_names_leave_state_intact (__main__.development_suite.<locals>.ContractWitnesses.test_invalid_names_leave_state_intact) ... ok\ntest_missing_identity (__main__.development_suite.<locals>.ContractWitnesses.test_missing_identity) ... ok\ntest_missing_resource (__main__.development_suite.<locals>.ContractWitnesses.test_missing_resource) ... ok\ntest_owner_success_and_other_record_unchanged (__main__.development_suite.<locals>.ContractWitnesses.test_owner_success_and_other_record_unchanged) ... ok\ntest_text_preserved_without_unrequested_filter (__main__.development_suite.<locals>.ContractWitnesses.test_text_preserved_without_unrequested_filter) ... ok\ntest_trim_and_length_boundaries (__main__.development_suite.<locals>.ContractWitnesses.test_trim_and_length_boundaries) ... ok\ntest_zero_identity (__main__.development_suite.<locals>.ContractWitnesses.test_zero_identity) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n"
+  },
+  "mutations": {
+    "ownership_removed": {
+      "tests": 8,
+      "failures": 1,
+      "errors": 0,
+      "passed": false,
+      "failed_cases": [
+        "test_cross_user_rejection"
+      ],
+      "output": "test_cross_user_rejection (__main__.development_suite.<locals>.ContractWitnesses.test_cross_user_rejection) ... FAIL\ntest_invalid_names_leave_state_intact (__main__.development_suite.<locals>.ContractWitnesses.test_invalid_names_leave_state_intact) ... ok\ntest_missing_identity (__main__.development_suite.<locals>.ContractWitnesses.test_missing_identity) ... ok\ntest_missing_resource (__main__.development_suite.<locals>.ContractWitnesses.test_missing_resource) ... ok\ntest_owner_success_and_other_record_unchanged (__main__.development_suite.<locals>.ContractWitnesses.test_owner_success_and_other_record_unchanged) ... ok\ntest_text_preserved_without_unrequested_filter (__main__.development_suite.<locals>.ContractWitnesses.test_text_preserved_without_unrequested_filter) ... ok\ntest_trim_and_length_boundaries (__main__.development_suite.<locals>.ContractWitnesses.test_trim_and_length_boundaries) ... ok\ntest_zero_identity (__main__.development_suite.<locals>.ContractWitnesses.test_zero_identity) ... ok\n\n======================================================================\nFAIL: test_cross_user_rejection (__main__.development_suite.<locals>.ContractWitnesses.test_cross_user_rejection)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/leandro/Escritorio/Security_review_skill/evals/run_witnesses.py\", line 97, in test_cross_user_rejection\n    self.rejected(\"u1\", \"b\", \"stolen\", (404, {\"error\": \"not_found\"}))\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leandro/Escritorio/Security_review_skill/evals/run_witnesses.py\", line 87, in rejected\n    self.assertEqual(rename(self.data, user, oid, name), expected)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Tuples differ: (200, {'id': 'b', 'name': 'stolen'}) != (404, {'error': 'not_found'})\n\nFirst differing element 0:\n200\n404\n\n- (200, {'id': 'b', 'name': 'stolen'})\n+ (404, {'error': 'not_found'})\n\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nFAILED (failures=1)\n"
+    },
+    "write_before_validation": {
+      "tests": 8,
+      "failures": 1,
+      "errors": 0,
+      "passed": false,
+      "failed_cases": [
+        "test_invalid_names_leave_state_intact"
+      ],
+      "output": "test_cross_user_rejection (__main__.development_suite.<locals>.ContractWitnesses.test_cross_user_rejection) ... ok\ntest_invalid_names_leave_state_intact (__main__.development_suite.<locals>.ContractWitnesses.test_invalid_names_leave_state_intact) ... FAIL\ntest_missing_identity (__main__.development_suite.<locals>.ContractWitnesses.test_missing_identity) ... ok\ntest_missing_resource (__main__.development_suite.<locals>.ContractWitnesses.test_missing_resource) ... ok\ntest_owner_success_and_other_record_unchanged (__main__.development_suite.<locals>.ContractWitnesses.test_owner_success_and_other_record_unchanged) ... ok\ntest_text_preserved_without_unrequested_filter (__main__.development_suite.<locals>.ContractWitnesses.test_text_preserved_without_unrequested_filter) ... ok\ntest_trim_and_length_boundaries (__main__.development_suite.<locals>.ContractWitnesses.test_trim_and_length_boundaries) ... ok\ntest_zero_identity (__main__.development_suite.<locals>.ContractWitnesses.test_zero_identity) ... ok\n\n======================================================================\nFAIL: test_invalid_names_leave_state_intact (__main__.development_suite.<locals>.ContractWitnesses.test_invalid_names_leave_state_intact)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/leandro/Escritorio/Security_review_skill/evals/run_witnesses.py\", line 109, in test_invalid_names_leave_state_intact\n    self.rejected(\"u1\", \"a\", name, (400, {\"error\": \"invalid_name\"}))\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leandro/Escritorio/Security_review_skill/evals/run_witnesses.py\", line 88, in rejected\n    self.assertEqual(self.data, old)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\nAssertionError: {'a': {'owner': 'u1', 'name': None}, 'b': {'owner': 'u2', 'name': 'second'}} != {'a': {'owner': 'u1', 'name': 'first'}, 'b': {'owner': 'u2', 'name': 'second'}}\n- {'a': {'name': None, 'owner': 'u1'}, 'b': {'name': 'second', 'owner': 'u2'}}\n?                ^^^^\n\n+ {'a': {'name': 'first', 'owner': 'u1'}, 'b': {'name': 'second', 'owner': 'u2'}}\n?                ^^^^^^^\n\n\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nFAILED (failures=1)\n"
+    }
+  },
+  "agent_generated_suite": {
+    "exit_code": 0,
+    "output": "test_accepts_trimmed_length_boundaries (test_service.RenameOrderTests.test_accepts_trimmed_length_boundaries) ... ok\ntest_auth_and_ownership_take_precedence_over_invalid_name (test_service.RenameOrderTests.test_auth_and_ownership_take_precedence_over_invalid_name) ... ok\ntest_missing_identity_has_no_effect (test_service.RenameOrderTests.test_missing_identity_has_no_effect) ... ok\ntest_missing_order_matches_other_owner_response (test_service.RenameOrderTests.test_missing_order_matches_other_owner_response) ... ok\ntest_other_owner_cannot_rename_by_changing_identifier (test_service.RenameOrderTests.test_other_owner_cannot_rename_by_changing_identifier) ... ok\ntest_owner_renames_only_selected_order (test_service.RenameOrderTests.test_owner_renames_only_selected_order) ... ok\ntest_rejects_empty_blank_and_oversized_names (test_service.RenameOrderTests.test_rejects_empty_blank_and_oversized_names) ... ok\ntest_rejects_non_string_names_without_coercion (test_service.RenameOrderTests.test_rejects_non_string_names_without_coercion) ... ok\ntest_text_is_preserved_as_data (test_service.RenameOrderTests.test_text_is_preserved_as_data) ... ok\ntest_trims_name_before_saving_and_returning (test_service.RenameOrderTests.test_trims_name_before_saving_and_returning) ... ok\ntest_zero_is_a_valid_identity (test_service.RenameOrderTests.test_zero_is_a_valid_identity) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.000s\n\nOK\n"
+  },
+  "expectations_met": true
+}

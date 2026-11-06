@@ -1,0 +1,200 @@
+{
+  "selection": "Ethnologue 2026 total speakers (L1+L2), via Wikipedia",
+  "source": "https://en.wikipedia.org/w/index.php?title=List_of_languages_by_total_number_of_speakers&oldid=1383412139",
+  "checked_at": "2026-11-05",
+  "translation_status": "AI-generated; no independent native-speaker review",
+  "languages": [
+    {
+      "rank": 1,
+      "code": "en",
+      "name": "English",
+      "path": "en/README.md"
+    },
+    {
+      "rank": 2,
+      "code": "cmn",
+      "name": "普通话 / 简体中文",
+      "path": "cmn/README.md"
+    },
+    {
+      "rank": 3,
+      "code": "hi",
+      "name": "हिन्दी",
+      "path": "hi/README.md"
+    },
+    {
+      "rank": 4,
+      "code": "es",
+      "name": "Español",
+      "path": "es/README.md"
+    },
+    {
+      "rank": 5,
+      "code": "ar",
+      "name": "العربية الفصحى",
+      "path": "ar/README.md"
+    },
+    {
+      "rank": 6,
+      "code": "fr",
+      "name": "Français",
+      "path": "fr/README.md"
+    },
+    {
+      "rank": 7,
+      "code": "bn",
+      "name": "বাংলা",
+      "path": "bn/README.md"
+    },
+    {
+      "rank": 8,
+      "code": "pt",
+      "name": "Português",
+      "path": "pt/README.md"
+    },
+    {
+      "rank": 9,
+      "code": "id",
+      "name": "Bahasa Indonesia",
+      "path": "id/README.md"
+    },
+    {
+      "rank": 10,
+      "code": "ur",
+      "name": "اردو",
+      "path": "ur/README.md"
+    },
+    {
+      "rank": 11,
+      "code": "ru",
+      "name": "Русский",
+      "path": "ru/README.md"
+    },
+    {
+      "rank": 12,
+      "code": "de",
+      "name": "Deutsch",
+      "path": "de/README.md"
+    },
+    {
+      "rank": 13,
+      "code": "ja",
+      "name": "日本語",
+      "path": "ja/README.md"
+    },
+    {
+      "rank": 14,
+      "code": "pcm",
+      "name": "Naijá / Nigerian Pidgin",
+      "path": "pcm/README.md"
+    },
+    {
+      "rank": 15,
+      "code": "arz",
+      "name": "العربية المصرية",
+      "path": "arz/README.md"
+    },
+    {
+      "rank": 16,
+      "code": "mr",
+      "name": "मराठी",
+      "path": "mr/README.md"
+    },
+    {
+      "rank": 17,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "path": "vi/README.md"
+    },
+    {
+      "rank": 18,
+      "code": "te",
+      "name": "తెలుగు",
+      "path": "te/README.md"
+    },
+    {
+      "rank": 19,
+      "code": "sw",
+      "name": "Kiswahili",
+      "path": "sw/README.md"
+    },
+    {
+      "rank": 20,
+      "code": "ha",
+      "name": "Hausa",
+      "path": "ha/README.md"
+    },
+    {
+      "rank": 21,
+      "code": "tr",
+      "name": "Türkçe",
+      "path": "tr/README.md"
+    },
+    {
+      "rank": 22,
+      "code": "pnb",
+      "name": "پنجابی (شاہ مکھی)",
+      "path": "pnb/README.md"
+    },
+    {
+      "rank": 23,
+      "code": "tl",
+      "name": "Tagalog",
+      "path": "tl/README.md"
+    },
+    {
+      "rank": 24,
+      "code": "ta",
+      "name": "தமிழ்",
+      "path": "ta/README.md"
+    },
+    {
+      "rank": 25,
+      "code": "yue",
+      "name": "粵語 / 繁體中文",
+      "path": "yue/README.md"
+    },
+    {
+      "rank": 26,
+      "code": "wuu",
+      "name": "吴语（上海话）",
+      "path": "wuu/README.md"
+    },
+    {
+      "rank": 27,
+      "code": "fa",
+      "name": "فارسی ایران",
+      "path": "fa/README.md"
+    },
+    {
+      "rank": 28,
+      "code": "ko",
+      "name": "한국어",
+      "path": "ko/README.md"
+    },
+    {
+      "rank": 29,
+      "code": "am",
+      "name": "አማርኛ",
+      "path": "am/README.md"
+    },
+    {
+      "rank": 30,
+      "code": "th",
+      "name": "ไทย",
+      "path": "th/README.md"
+    },
+    {
+      "rank": 31,
+      "code": "jv",
+      "name": "Basa Jawa",
+      "path": "jv/README.md"
+    },
+    {
+      "rank": 32,
+      "code": "it",
+      "name": "Italiano",
+      "path": "it/README.md"
+    }
+  ]
+}

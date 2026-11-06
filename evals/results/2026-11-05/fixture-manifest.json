@@ -1,0 +1,8 @@
+{
+  "root": "/tmp/security-review-eval-20261105",
+  "review_repo": "/tmp/security-review-eval-20261105/review-project",
+  "base": "dce0e6e6892965ead7bcbd4802fcc7579d5b6de8",
+  "changed": "bec5e0339b573a5a6999f490ff6ec4f1e81fb837",
+  "final": "31f08236c8f11d78cc94ac664fa6d64644326d3d",
+  "development_repo": "/tmp/security-review-eval-20261105/development-project"
+}
