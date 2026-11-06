@@ -1,0 +1,6 @@
+interface:
+  display_name: "Security Review · OWASP"
+  short_description: "Aprendé OWASP y aplicalo al escribir y revisar código"
+  default_prompt: "Usá $security-review para acompañarme mientras programo, enseñarme OWASP con cuestionarios y revisar los commits del proyecto."
+policy:
+  allow_implicit_invocation: true
